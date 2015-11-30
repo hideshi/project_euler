@@ -7,4 +7,4 @@ defmodule Problem0001 do
     end
   end
 end
-Problem0001.func(999, []) |> Enum.reduce(0, fn(x, acc) -> x + acc end) |> IO.inspect
+Problem0001.func(999, []) |> Enum.sum |> IO.inspect

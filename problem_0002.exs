@@ -7,4 +7,4 @@ defmodule Problem0002 do
     end
   end
 end
-Problem0002.func(1, 2, [], 4_000_000) |> Enum.filter(fn(x) -> rem(x, 2) == 0 end) |> Enum.reduce(0, fn(x, acc) -> x + acc end) |> IO.inspect
+Problem0002.func(1, 2, [], 4_000_000) |> Enum.filter(fn(x) -> rem(x, 2) == 0 end) |> Enum.sum |> IO.inspect
